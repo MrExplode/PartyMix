@@ -1,0 +1,25 @@
+name: ${project.name}
+version: ${project.version}
+author: MrExplode
+description: ${project.description}
+website: ${project.website}
+main: ${mainClass}
+api-version: 1.13
+
+premissions:
+    partymix.all:
+        default: true
+        description: All permission for PartyMix
+        children:
+            partymix.lightningstick: true
+            partymix.firestick: true
+            partymix.mage: true
+    partymix.lightningstick:
+        default: false
+        description: Perm for lightning stick
+    partymix.firestick:
+        default: false
+        description: Perm for fire shooting stick
+    partymix.mage:
+        default: false
+        description: Perm for mage item
