@@ -75,7 +75,7 @@ public abstract class AbstractPartyCommand extends BukkitCommand {
         ItemStack itemStack = new ItemStack(item, 1);
         beforeGive.accept(itemStack);
         ItemMeta meta = itemStack.getItemMeta();
-        List<String> lore = meta.getLore();
+        List<String> lore = (meta.getLore() == null ? new ArrayList<String>() : meta.getLore());
         lore.add(ChatColor.GOLD + identifier);
         lore.add(ChatColor.DARK_RED + "PartyMix");
         meta.setLore(lore);
