@@ -4,4 +4,4 @@ before_install:
    - chmod +x scripts/javadoc.sh
 script:
    - scripts/artifact.sh
-   - srcipts/javadoc.sh
+   - scripts/javadoc.sh
