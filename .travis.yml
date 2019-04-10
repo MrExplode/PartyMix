@@ -1,4 +1,7 @@
 language: java
+before_install:
+   - chmod +x scripts/artifact.sh
+   - chmod +x scripts/javadoc.sh
 script:
    - scripts/artifact.sh
    - srcipts/javadoc.sh
