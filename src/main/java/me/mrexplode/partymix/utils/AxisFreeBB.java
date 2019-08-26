@@ -41,6 +41,7 @@ public class AxisFreeBB {
     /*
      * returns the new corner2 value. 
      */
+    @SuppressWarnings("unused")
     private void transformToAxis() {
         
     }
@@ -71,6 +72,8 @@ public class AxisFreeBB {
             vector.setX(vector.getX() * cos - vector.getY() * sin);
             vector.setY(vector.getX() * sin + vector.getY() * cos);
             break;
+            default:
+                break;
         }
     }
 
